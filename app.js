@@ -79,7 +79,7 @@ const promptUser = () => {
     
 const promptProject = portfolioData => {
     // projects array for portfolioData
-    portfolioData.projects = [];
+    // portfolioData.projects = [];
 
     // If there's no 'projects' array property, create one
 
@@ -166,7 +166,7 @@ promptUser()
 
     fs.writeFile('index.html', pageHTML, err => {
       if (err) throw new Error(err);
-
+console.log(portfolioData)
       console.log('Page created! Check out index.html in this directory to see it!');
     });
   });
